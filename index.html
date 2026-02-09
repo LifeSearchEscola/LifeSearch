@@ -34,14 +34,14 @@
             </div>
 
             <nav class="header-nav" id="header-nav">
-                <a href="#" class="nav-item" id="nav-favoritos">
+                <a href="favoritos.html" class="nav-item" id="nav-favoritos">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="#e74c3c" stroke="#e74c3c" stroke-width="1">
                         <path
                             d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
                     </svg>
                     <span>Favoritos</span>
                 </a>
-                <a href="#" class="nav-item" id="nav-login">
+                <a href="login.html" class="nav-item" id="nav-login">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
                         <circle cx="12" cy="7" r="4" />
@@ -175,41 +175,39 @@
         <section class="section-stores" id="section-stores">
             <h2 class="section-title">Principais lojas</h2>
             <div class="stores-grid">
-                <a href="#" class="store-item" id="store-mercadolivre">
-                    <div class="store-logo store-mercadolivre">
-                        <span>🤝</span>
-                    </div>
-                </a>
                 <a href="#" class="store-item" id="store-amazon">
-                    <div class="store-logo store-amazon">
-                        <span class="store-letter">a</span>
-                    </div>
-                </a>
-                <a href="#" class="store-item" id="store-nike">
-                    <div class="store-logo store-nike">
-                        <svg width="40" height="16" viewBox="0 0 40 16">
-                            <path d="M2 14C6 6 14 0 20 2C14 6 10 10 8 14L2 14Z" fill="#111" />
-                        </svg>
-                    </div>
-                </a>
-                <a href="#" class="store-item" id="store-shein">
-                    <div class="store-logo store-shein">
-                        <span>🔥</span>
-                    </div>
-                </a>
-                <a href="#" class="store-item" id="store-shopee">
-                    <div class="store-logo store-shopee">
-                        <span class="store-letter shopee-s">S</span>
+                    <div class="store-logo">
+                        <img src="assets/img/store_amazon.png" alt="Amazon">
                     </div>
                 </a>
                 <a href="#" class="store-item" id="store-boticario">
-                    <div class="store-logo store-boticario">
-                        <span class="store-text-small">oBoticário</span>
+                    <div class="store-logo">
+                        <img src="assets/img/store_boticario.png" alt="O Boticário">
                     </div>
                 </a>
-                <a href="#" class="store-item" id="store-extra">
-                    <div class="store-logo store-extra">
-                        <span>🛒</span>
+                <a href="#" class="store-item" id="store-kabum">
+                    <div class="store-logo">
+                        <img src="assets/img/store_kabum.png" alt="KaBuM">
+                    </div>
+                </a>
+                <a href="#" class="store-item" id="store-mercadopago">
+                    <div class="store-logo">
+                        <img src="assets/img/store_mercado_pago.png" alt="Mercado Pago">
+                    </div>
+                </a>
+                <a href="#" class="store-item" id="store-nike">
+                    <div class="store-logo">
+                        <img src="assets/img/store_nike.png" alt="Nike">
+                    </div>
+                </a>
+                <a href="#" class="store-item" id="store-pichau">
+                    <div class="store-logo">
+                        <img src="assets/img/store_pichau.png" alt="Pichau">
+                    </div>
+                </a>
+                <a href="#" class="store-item" id="store-shein">
+                    <div class="store-logo">
+                        <img src="assets/img/store_shein.png" alt="Shein">
                     </div>
                 </a>
             </div>
@@ -236,17 +234,18 @@
                         <li><a href="#">Informações corporativas</a></li>
                         <li><a href="#">Acessibilidade</a></li>
                         <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="contato.html">Contato</a></li>
                         <li><a href="#">Carreiras</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h3>Categorias</h3>
                     <ul>
-                        <li><a href="#">Eletrônicos</a></li>
-                        <li><a href="#">Roupas e vestimenta</a></li>
-                        <li><a href="#">Casa e cozinha</a></li>
-                        <li><a href="#">Beleza e cuidados</a></li>
-                        <li><a href="#">Livros</a></li>
+                        <li><a href="pesquisa.html">Eletrônicos</a></li>
+                        <li><a href="pesquisa.html">Roupas e vestimenta</a></li>
+                        <li><a href="pesquisa.html">Casa e cozinha</a></li>
+                        <li><a href="pesquisa.html">Beleza e cuidados</a></li>
+                        <li><a href="pesquisa.html">Livros</a></li>
                     </ul>
                 </div>
             </div>
@@ -280,6 +279,21 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Search redirect
+        const searchInput = document.getElementById('search-input');
+        const searchBtn = document.getElementById('search-btn');
+        function doSearch() {
+            if (searchInput.value.trim()) {
+                window.location.href = 'pesquisa.html';
+            }
+        }
+        searchInput.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') doSearch();
+        });
+        searchBtn.addEventListener('click', doSearch);
+    </script>
 
 </body>
 
