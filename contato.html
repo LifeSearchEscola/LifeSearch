@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com o Life Search. Envie sua mensagem, sugestão ou reclamação.">
+    <title>Contato - Life Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo" id="logo">
+                <img src="assets/img/logo_header.png" alt="Life Search" class="logo-img"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-fallback" style="display:none;">
+                    <div class="logo-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="15" stroke="#333" stroke-width="2" />
+                            <circle cx="13" cy="14" r="7" stroke="#333" stroke-width="2" fill="none" />
+                            <line x1="18" y1="19" x2="24" y2="25" stroke="#333" stroke-width="2"
+                                stroke-linecap="round" />
+                            <circle cx="13" cy="14" r="3" fill="#FFD700" />
+                        </svg></div>
+                    <span class="logo-text">Life Search</span>
+                </div>
+            </a>
+            <div class="search-bar" id="search-bar">
+                <input type="text" placeholder="Pesquisar" id="search-input">
+                <button class="search-btn" id="search-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="header-nav" id="header-nav">
+                <a href="favoritos.html" class="nav-item" id="nav-favoritos">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#e74c3c" stroke="#e74c3c" stroke-width="1">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
+                    <span>Favoritos</span>
+                </a>
+                <a href="login.html" class="nav-item" id="nav-login">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    <span>Login</span>
+                </a>
+                <button class="menu-btn" id="menu-btn">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact-section">
+        <div class="contact-container">
+            <div class="contact-text">
+                <h1>Entre em contato</h1>
+                <p>Precisa de ajuda, quer fazer uma<br>reclamação ou relatar um erro?<br><a href="#"
+                        class="contact-cta">Fale conosco!</a></p>
+            </div>
+            <div class="contact-form-card">
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-nome"><strong>Seu nome</strong></label>
+                            <input type="text" id="contact-nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-sobrenome"><strong>Seu sobrenome</strong></label>
+                            <input type="text" id="contact-sobrenome" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email"><strong>Seu email</strong></label>
+                        <input type="email" id="contact-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-mensagem"><strong>Como podemos te ajudar?</strong></label>
+                        <textarea id="contact-mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar" id="btn-enviar">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="assets/img/logo_footer.png" alt="Life Search" class="footer-logo-img"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-fallback" style="display:none;">
+                        <div class="logo-icon footer-logo-icon"><svg width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <circle cx="16" cy="16" r="15" stroke="#333" stroke-width="2" />
+                                <circle cx="13" cy="14" r="7" stroke="#333" stroke-width="2" fill="none" />
+                                <line x1="18" y1="19" x2="24" y2="25" stroke="#333" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <circle cx="13" cy="14" r="3" fill="#FFD700" />
+                            </svg></div><span class="logo-text">Life Search</span>
+                    </div>
+                </div>
+                <p class="footer-desc">Life Search é a plataforma ideal para encontrar ofertas e produtos das melhores
+                    lojas. Navegue por diversas categorias e descubra preços acessíveis com facilidade!</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h3>Sobre</h3>
+                    <ul>
+                        <li><a href="#">Sobre o Life Search</a></li>
+                        <li><a href="#">Informações corporativas</a></li>
+                        <li><a href="#">Acessibilidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Categorias</h3>
+                    <ul>
+                        <li><a href="#">Eletrônicos</a></li>
+                        <li><a href="#">Roupas e vestimenta</a></li>
+                        <li><a href="#">Casa e cozinha</a></li>
+                        <li><a href="#">Beleza e cuidados</a></li>
+                        <li><a href="#">Livros</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon" id="social-facebook" aria-label="Facebook"><svg width="28" height="28"
+                        viewBox="0 0 24 24" fill="white">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg></a>
+                <a href="#" class="social-icon" id="social-instagram" aria-label="Instagram"><svg width="28" height="28"
+                        viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                        <circle cx="12" cy="12" r="5" />
+                        <circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none" />
+                    </svg></a>
+                <a href="#" class="social-icon" id="social-twitter" aria-label="Twitter"><svg width="28" height="28"
+                        viewBox="0 0 24 24" fill="white">
+                        <path
+                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                    </svg></a>
+                <a href="#" class="social-icon" id="social-linkedin" aria-label="LinkedIn"><svg width="28" height="28"
+                        viewBox="0 0 24 24" fill="white">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
